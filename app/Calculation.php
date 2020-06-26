@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Attendance extends Model
+class Calculation extends Model
 {
 	/**
 	 * The attributes that are mass assignable.
@@ -12,18 +12,7 @@ class Attendance extends Model
 	 * @var array
 	 */
 	protected $fillable = [
-		'date', 'is_sign_in', 'user_id', 'is_processed'
-	];
-
-	/**
-	 * The attributes that should be cast to native types.
-	 *
-	 * @var array
-	 */
-	protected $casts = [
-		'date' => 'datetime',
-		'is_sign_in' => 'boolean',
-		'is_processed' => 'boolean'
+		'date', 'work_time', 'absence_time', 'defective_time', 'user_id'
 	];
 
 	/**

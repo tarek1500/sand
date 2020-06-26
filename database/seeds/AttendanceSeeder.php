@@ -14,7 +14,7 @@ class AttendanceSeeder extends Seeder
 	{
 		if ($user = User::find(1))
 		{
-			$user->attendance()->createMany([
+			$user->attendances()->createMany([
 				['date' => new DateTime('01-01-2020 08:28:00'), 'is_sign_in' => true, 'is_processed' => false],
 				['date' => new DateTime('01-01-2020 16:12:00'), 'is_sign_in' => false, 'is_processed' => false],
 				['date' => new DateTime('02-01-2020 09:13:00'), 'is_sign_in' => true, 'is_processed' => false],
@@ -43,13 +43,13 @@ class AttendanceSeeder extends Seeder
 				['date' => new DateTime('19-01-2020 10:47:00'), 'is_sign_in' => false, 'is_processed' => false],
 				['date' => new DateTime('19-01-2020 13:12:00'), 'is_sign_in' => true, 'is_processed' => false],
 				['date' => new DateTime('19-01-2020 15:59:00'), 'is_sign_in' => false, 'is_processed' => false],
-				['date' => new DateTime('19-01-2020'), 'is_processed' => false]
+				['date' => new DateTime('20-01-2020'), 'is_processed' => false]
 			]);
 		}
 
 		if ($user = User::find(2))
 		{
-			$user->attendance()->createMany([
+			$user->attendances()->createMany([
 				['date' => new DateTime('01-01-2020 08:15:00'), 'is_sign_in' => true, 'is_processed' => false],
 				['date' => new DateTime('01-01-2020 15:46:00'), 'is_sign_in' => false, 'is_processed' => false],
 				['date' => new DateTime('02-01-2020 08:20:00'), 'is_sign_in' => true, 'is_processed' => false],
@@ -81,7 +81,7 @@ class AttendanceSeeder extends Seeder
 
 		if ($user = User::find(3))
 		{
-			$user->attendance()->createMany([
+			$user->attendances()->createMany([
 				['date' => new DateTime('01-01-2020 08:29:00'), 'is_sign_in' => true, 'is_processed' => false],
 				['date' => new DateTime('01-01-2020 15:54:00'), 'is_sign_in' => false, 'is_processed' => false],
 				['date' => new DateTime('02-01-2020 08:32:00'), 'is_sign_in' => true, 'is_processed' => false],
@@ -130,7 +130,7 @@ class AttendanceSeeder extends Seeder
 
 		if ($user = User::find(4))
 		{
-			$user->attendance()->createMany([
+			$user->attendances()->createMany([
 				['date' => new DateTime('01-01-2020 08:39:00'), 'is_sign_in' => true, 'is_processed' => false],
 				['date' => new DateTime('01-01-2020 15:00:00'), 'is_sign_in' => false, 'is_processed' => false],
 				['date' => new DateTime('02-01-2020 08:20:00'), 'is_sign_in' => true, 'is_processed' => false],
